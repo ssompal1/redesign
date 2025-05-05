@@ -1,28 +1,7 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
-    width:100vw;
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.container{
-    width:100vw;
-}
-
-#error-card{
-    position:absolute;
-    width: 30%;
-    top:30%;
-    left:35%;
-    height:30%;
-    background-color:white;
 }
 
 #menu-bar {
@@ -34,12 +13,10 @@ body{
     padding: 0 2.5vw;
     width: 100vw;
     position: relative;
-    flex-wrap: wrap; 
   }
   
   #left-buttons {
     display: flex;
-    flex-wrap: wrap;
     gap: 1vw;
     align-items: center;
     max-width: 50vw; 
@@ -54,14 +31,12 @@ body{
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 2;
   }
   
   #menu-title {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 0;
     white-space: wrap;
   }
   
@@ -75,7 +50,6 @@ body{
   #right-button {
     display: flex;
     align-items: center;
-    z-index: 1;
     margin-left: auto;
   }
   
@@ -150,7 +124,6 @@ body{
     font-size: clamp(1.65rem, 2vw, 8rem);
     text-align: center;
     color: 012778;
-
 }
 
 #main-container {
@@ -170,10 +143,6 @@ body{
     justify-content:center;
     width:75vw;
     gap:2vh 1vh;
-}
-
-.property-button-container, .complaint-button-container, .application-button-container, .other-button-container {
-    color:white;
 }
 
 .search-button{
@@ -252,10 +221,6 @@ body{
     text-align:start;
     margin:auto;
 }
-
-#hamburger {
-    display: none;
-  }
 
 @media (max-width: 2500px) {
     #menu-bar #menu-title h1 {

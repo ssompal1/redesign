@@ -1,7 +1,3 @@
-document.getElementById("x").addEventListener('click',function() {
-    document.getElementById('error-card').style.display = 'none';
-});
-
 document.getElementById('hamburger').addEventListener('click', () => {
     const menu = document.getElementById('menu-items');
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
@@ -16,4 +12,7 @@ document.getElementById('hamburger').addEventListener('click', () => {
       leftButtons.style.display = 'none'; 
     }
   });
+
+//buttons are disappearing on click and resize
+//nyc doesn't need to be a button
 
