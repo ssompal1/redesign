@@ -1,18 +1,24 @@
-document.getElementById('hamburger').addEventListener('click', () => {
-    const menu = document.getElementById('menu-items');
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-  });
+const hamburger = document.getElementById('hamburger');
+const leftButtons = document.getElementById('left-buttons');
 
-  document.getElementById('hamburger').addEventListener('click', function() {
-    this.classList.toggle('active'); 
-    const leftButtons = document.getElementById('left-buttons');
-    if (this.classList.contains('active')) {
-      leftButtons.style.display = 'flex'; 
-    } else {
-      leftButtons.style.display = 'none'; 
-    }
-  });
+hamburger.addEventListener('click', function () {
+  this.classList.toggle('active');
+  //after hamburger clicked display the left buttons columnwise
+  if (this.classList.contains('active')) {
+    leftButtons.style.display = 'flex';
+  } else {
+    leftButtons.style.display = 'none';
+  }
+});
 
-//buttons are disappearing on click and resize
-//nyc doesn't need to be a button
+window.addEventListener('resize', () => {
+  //when resize bigger than mobile, automatically reset leftbuttons and hamburger
+  if (window.innerWidth > 475) {
+    leftButtons.style.display = 'flex';
+    hamburger.classList.remove('active');
+  } else {
+    leftButtons.style.display = hamburger.classList.contains('active') ? 'flex' : 'none';
+  }
+});
+
 
