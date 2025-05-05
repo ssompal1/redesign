@@ -1,4 +1,3 @@
-
 document.getElementById("x").addEventListener('click',function() {
     document.getElementById('error-card').style.display = 'none';
 });
