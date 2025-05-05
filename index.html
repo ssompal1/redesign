@@ -1,0 +1,55 @@
+<head>
+    <meta charset="utf-8" />
+    <title>dropdown menus study</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+    <body>
+        <div id="menu-bar">
+            <div id="left-buttons">
+              <button class="menu-button">FAQ</button>
+              <button class="menu-button">Glossary</button>
+            </div>
+            <div id="hamburger" class="menu-button">&#9776;</div>
+            <div id="menu-title">
+              <h1>Building Information Search</h1>
+            </div>
+            <div id="right-button">
+              <button class="menu-button" id="logo-button"><img src="./nyc_logo.png"/></button>
+            </div>
+          </div>
+        </div>
+        <div id="main-container">
+            <div id="portal-title">
+                <h1>Search the Public Portal</h1>
+            </div>
+        <div class="button-container">
+            <div class="property-button-container">
+                <button class="search-button" id="property-button"><i class="bi bi-house-door-fill" style="font-size:clamp(2rem,4vw,7rem);margin-top:clamp(1vh,1vh,2vh);margin-bottom:clamp(0.8vh,0.2rem,2vh);"></i>Property</button>
+            </div>
+            <div class="complaint-button-container">
+                <button class="search-button" id="complaint-button"><i class="bi-exclamation-diamond-fill" style="font-size:clamp(2rem,4vw,7rem);margin-top:clamp(1vh,1vh,2vh);margin-bottom:clamp(1vh,0.3rem,2vh);"></i>Complaint, Summons, or Violation</button>
+            </div>
+            <div class="application-button-container">
+                <button class="search-button" id="application-button"><i class="bi-file-text" style="font-size:clamp(2rem,3.5vw,7rem);margin-top:clamp(1vh,1vh,2vh);margin-bottom:clamp(1vh,0.3rem,2vh);"></i>Application</button>
+            </div>
+            <div class="other-button-container">
+                <button class="search-button" id="other-button"><i class="bi-lightning-fill" style="font-size:clamp(2rem,3.5vw,7rem);margin-top:clamp(1vh,1vh,2vh);margin-bottom:clamp(1vh,0.3rem,2vh);"></i>Other</button>
+            </div>
+        </div>
+        </div>
+        <div id="bottom-container">
+            <div id="help-statement">
+            <p>BIS is not reflecting some transactions made April 29 - May 6, 2022, as well as limited transactions prior to April 29 due to an unexpected power outage at the City's data center. If BIS does not accurately reflect your transaction, submit an inquiry at www.nyc.gov/dobhelp .
+            </p>
+        </div>
+        <div id="bottom-statement">
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Join the Newsletter</p>
+        </div>
+        </div>
+    <script src="./main.js"></script>
+    </body>

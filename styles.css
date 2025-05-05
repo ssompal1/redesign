@@ -1,0 +1,368 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width:100vw;
+}
+
+#error-card{
+    position:absolute;
+    width: 30%;
+    top:30%;
+    left:35%;
+    height:30%;
+    background-color:white;
+}
+
+#error-card h1,p{
+    color: blue;
+    text-align: center;
+    margin:auto;
+}
+
+#x p{
+    text-align: right;
+    margin:auto;
+    padding:0 1vh;
+}
+
+#menu-bar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 8vh;
+    background-color: #1771B7;
+    padding: 0 2.5vw;
+    width: 100vw;
+    position: relative;
+    flex-wrap: wrap; 
+  }
+  
+  #left-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    align-items: center;
+    max-width: 50vw; 
+    z-index: 1;
+    justify-content: flex-start; 
+  }
+
+  #hamburger {
+    display: none; 
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  #menu-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    white-space: wrap;
+  }
+  
+#menu-bar #menu-title h1 {
+    font-size: clamp(1.3rem, 2.5vw, 10rem);
+    color: white;
+    margin: 0;
+    text-align:center;
+  }
+  
+  #right-button {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin-left: auto;
+  }
+  
+  .menu-button {
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    color: white;
+    background-color: #1771B7;
+    border: none;
+  }
+  
+  .menu-button:hover {
+    background-color: #154F7C;
+  }
+
+#menu-items{
+    display:flex;
+    flex-direction:row;
+}
+#menu-bar h1{
+    font-size: 2rem;
+    color: white;
+    font-family:Helvetica;
+}
+
+#menu-bar {
+    height: 8vh;
+    background-color: #1771B7;
+    width:100vw;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.menu-button {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    background-color: #1771b7;
+    color: white;
+    font-size: clamp(0.8rem, 1vw, 4rem);
+    border:none;
+    width:auto;
+    margin: 1vw;
+} */
+
+.menu-button:hover{
+  background-color: #154F7C; 
+}
+#main-title {
+    display:flex;
+    background-color: white;
+    align-items:center;
+    justify-content:center;
+}
+
+#portal-title {
+    margin: 5vh;
+    display:flex;
+    background-color: white;
+    justify-self:center; 
+}
+
+#main-title h1{
+    font-size: 2rem;
+    text-align: center;
+    color: 012778;
+}
+
+#portal-title h1{
+    font-size: clamp(1.65rem, 2vw, 8rem);
+    text-align: center;
+    color: 012778;
+
+}
+
+#main-container {
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    flex-wrap: wrap;
+    width:75vw;
+    height:auto;
+    margin:auto;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    width:75vw;
+    gap:2vh 1vh;
+}
+
+.property-button-container, .complaint-button-container, .application-button-container, .other-button-container {
+    color:white;
+}
+
+.search-button{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width:25vw;
+    height:17vh;
+    background-color: white;
+    border-color:#1771b7;
+    border-style:solid;
+    border-width: clamp(2px, 0.3vw, 6px);    
+    border-radius: clamp(8px, 1vw, 20px);
+    color: #1771b7;
+    font-size: clamp(1rem, 1.2vw, 5rem);
+    line-height:100%;
+    margin:1.5vh;
+    
+}
+
+.search-button img {
+    width: clamp(2rem, 10vw, 5rem);
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+.search-button:hover{
+    background-color: #1771b7;
+    border-color:white;
+    color: white;
+
+}
+
+#blue-square{
+    height:20vh;
+    font-size:20vh;
+}
+
+#blue-square p{
+    font-size:20vh;
+}
+
+#bottom-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin-top:3vh;
+    background-color: #F1F1F1;
+    width:100vw;
+}
+
+#help-statement{
+    display:flex;
+    flex-direction:column;
+    width: 65vw;
+    margin: 2vh auto 4vh;
+}
+
+#help-statement p{
+    text-align:start;
+}
+
+#bottom-statement{
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+    margin:auto;
+    margin-bottom:1vh;
+    width:65vw;
+}
+
+#bottom-container p{
+    color: #2D2D2D;
+    font-size:clamp(0.7rem, 0.8vw, 3rem);
+    font-family: Helvetica;
+    text-align:start;
+    margin:auto;
+}
+
+#hamburger {
+    display: none;
+  }
+
+@media (max-width: 2500px) {
+    #menu-bar #menu-title h1 {
+        text-align:center;
+        white-space:normal;
+        font-size:clamp(1.8rem, 2.5vw, 6rem)
+      }
+}
+
+#logo-button{
+    max-width:15vw;
+}
+.menu-button img{
+    width:50%;
+    height:auto;
+    margin-left:auto;
+}
+
+@media (max-width: 800px) {
+    #bottom-statement, #help-statement{
+        width:75vw;}
+    
+    #bottom-container p{
+        font-size:clamp(0.3rem, 2vw, 0.7rem);
+    }
+
+    #menu-bar #menu-title h1 {
+        text-align:center;
+        white-space:normal;
+        font-size:clamp(1.5rem, 4vw, 1.8rem)
+      }
+    
+      .menu-button{
+        font-size: clamp(0.6rem, 2vw, 0.8rem);
+      }
+      #portal-title h1{
+        font-size:clamp(1.35rem, 3.5vw, 1.65rem)
+    }
+}
+
+  @media (max-width: 475px) {
+    .menu-button img{
+        width:75%;
+        height:auto;
+        margin-left:auto;
+    }
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2vh 0;
+    }
+
+    #bottom-container p{
+        font-size:clamp(0.5rem, 2.5vw, 0.7rem);
+    }
+    #menu-bar #menu-title h1 {
+        text-align:center;
+        white-space:normal;
+        font-size:clamp(1rem, 5vw, 1.5rem);
+      }
+    #portal-title h1{
+        font-size:clamp(1rem, 4.4vw, 1.5rem);
+        width:90vw;
+
+    }
+    #left-buttons {
+        display: none; 
+        flex-direction: column;
+        width: clamp(15,20);
+        background-color: #1771B7;
+        position: absolute;
+        top:6vh;
+        left: 0;
+        z-index: 1;
+        align-items: center; 
+        padding-top: 1vh; 
+      }
+    
+      #hamburger {
+        display: block; 
+      }
+    
+      #hamburger.active + #left-buttons {
+        display: flex; 
+      }
+
+    #bottom-statement, #help-statement{
+        width:90vw;
+    }
+  
+    .search-button {
+      width: 80vw;
+      height: auto;
+      padding: 0.3rem; 
+        margin: 0.5vh 0;
+      text-align: center;
+    }
+  }
